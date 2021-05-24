@@ -11,11 +11,9 @@ export const Container = styled.div`
 
   @media screen and (max-width: 960px) {
     background-image: url(${bannerMobile});
-    /* height: 190px; */
-    /* filter: brightness(0.55); */
+    height: 300px;
   }
 `;
-
 export const Banner = styled.div`
   max-width: 1240px;
   height: 100%;
@@ -23,6 +21,10 @@ export const Banner = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media screen and (max-width: 960px) {
+    align-items: center;
+  }
 `;
 
 export const HeroP = styled.p`
@@ -31,6 +33,11 @@ export const HeroP = styled.p`
   font-size: 30px;
   max-width: 479px;
   margin-left: 40px;
+
+  @media screen and (max-width: 960px) {
+    margin-left: 0px;
+    padding: 0px 22px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -40,12 +47,21 @@ export const HeroH1 = styled.h1`
   line-height: 45px;
   max-width: 479px;
   margin-left: 40px;
+
+  @media screen and (max-width: 960px) {
+    margin-left: 0px;
+    padding: 0px 22px;
+  }
 `;
 
 export const HeroSlider = styled.div`
   display: flex;
   justify-content: center;
   margin: 82px 0px 37px;
+
+  @media screen and (max-width: 960px) {
+    margin: 45px 0px 37px;
+  }
 `;
 
 export const SliderButton = styled.button`

@@ -22,6 +22,10 @@ export const Title = styled.p`
 
     padding: 32px 0 0;
   }
+
+  @media screen and (max-width: 960px) {
+    padding: 24px 15px 16px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -93,6 +97,21 @@ export const FormContainer = styled.form`
   .input-email {
     margin: 0 8px;
   }
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .input-email {
+      margin: 22px 0;
+    }
+
+    .MuiFormControl-root {
+      width: 95%;
+    }
+  }
 `;
 
 export const Button = styled.button`
@@ -118,5 +137,9 @@ export const Button = styled.button`
 
   :hover {
     filter: brightness(0.9);
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 95%;
   }
 `;

@@ -10,12 +10,21 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 export const Informations = styled.div`
   color: white;
   margin-left: 40px;
   padding: 25px 0 28px;
+
+  @media screen and (max-width: 960px) {
+    margin-left: 0px;
+    padding: 25px 16px 28px;
+  }
 `;
 
 export const Title = styled.p`
@@ -44,6 +53,12 @@ export const Divider = styled.div`
 
 export const Buttons = styled.div`
   margin: 56px 0;
+
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Button = styled.button`
@@ -81,4 +96,9 @@ export const IconText = styled.p`
 `;
 export const Logos = styled.img`
   margin-right: 40px;
+
+  @media screen and (max-width: 960px) {
+    margin: 0px 48px 15px;
+    align-self: center;
+  }
 `;
