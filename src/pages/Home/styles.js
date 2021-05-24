@@ -49,6 +49,7 @@ export const HeroSlider = styled.div`
 `;
 
 export const SliderButton = styled.button`
+  cursor: pointer;
   border-radius: 50%;
   background: var(--color-sixth);
   width: 10px;

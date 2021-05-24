@@ -25,22 +25,24 @@ function Home() {
     setProductList(response);
   };
   return (
-    <Container>
-      <Banner>
-        <HeroP>Olá, o que você está buscando?</HeroP>
-        <HeroH1>Criar ou migrar seu e-commerce?</HeroH1>
-        <HeroSlider>
-          <SliderButton className="selected" />
-          <SliderButton />
-          <SliderButton />
-          <SliderButton />
-        </HeroSlider>
-      </Banner>
+    <>
+      <Container>
+        <Banner>
+          <HeroP>Olá, o que você está buscando?</HeroP>
+          <HeroH1>Criar ou migrar seu e-commerce?</HeroH1>
+          <HeroSlider>
+            <SliderButton className="selected" />
+            <SliderButton />
+            <SliderButton />
+            <SliderButton />
+          </HeroSlider>
+        </Banner>
+      </Container>
       <Products>
         <ProductsSlider productList={productList} />
         <Newsletter />
       </Products>
-    </Container>
+    </>
   );
 }
 
