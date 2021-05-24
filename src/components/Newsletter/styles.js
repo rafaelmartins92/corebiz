@@ -47,6 +47,10 @@ export const FormContainer = styled.form`
     width: 280px;
   }
 
+  .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: var(--color-bg);
+  }
+
   .MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
     border-color: var(--color-second);
   }
