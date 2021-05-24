@@ -25,6 +25,7 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
+  color: var(--color-third);
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
