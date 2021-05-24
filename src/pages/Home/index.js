@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+
 import Newsletter from "../../components/Newsletter";
 import ProductsSlider from "../../components/ProductsSlider";
+
 import { GetProducts } from "../../services/products";
 
 import {

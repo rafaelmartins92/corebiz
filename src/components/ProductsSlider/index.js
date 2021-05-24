@@ -1,5 +1,6 @@
 import SwiperCore, { Navigation, A11y } from "swiper";
 import NumberFormat from "react-number-format";
+import ReactStars from "react-rating-stars-component";
 
 import { SwiperSlide } from "swiper/react";
 
@@ -27,7 +28,15 @@ function ProductsSlider({ productList }) {
                 )}
                 <img src={product.imageUrl} alt="Produto" />
                 <div className="produt-name">{product.productName}</div>
-                <div className="product-stars">{product.stars} ESTRELAS</div>
+                <div className="product-stars">
+                  <ReactStars
+                    value={product.stars}
+                    edit={false}
+                    count={5}
+                    size={10}
+                    activeColor="#F8475F"
+                  />
+                </div>
                 {product.listPrice ? (
                   <NumberFormat
                     className="product-listProduct"

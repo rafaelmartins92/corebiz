@@ -120,8 +120,8 @@ export const CustomSwiper = styled(Swiper)`
   }
 
   .product-stars {
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
     margin-top: 8px;
   }
 

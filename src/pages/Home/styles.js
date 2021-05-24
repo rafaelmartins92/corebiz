@@ -11,8 +11,8 @@ export const Container = styled.div`
 
   @media screen and (max-width: 960px) {
     background-image: url(${bannerMobile});
-    height: 190px;
-    filter: brightness(0.55);
+    /* height: 190px; */
+    /* filter: brightness(0.55); */
   }
 `;
 
