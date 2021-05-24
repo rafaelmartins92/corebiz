@@ -55,12 +55,18 @@ export const SliderButton = styled.button`
   width: 10px;
   height: 10px;
 
+  transition: 0.3s;
+
   :not(:last-child) {
     margin-right: 12px;
   }
 
   &.selected {
     background: var(--color-polygon);
+  }
+
+  :hover {
+    filter: brightness(0.9);
   }
 `;
 

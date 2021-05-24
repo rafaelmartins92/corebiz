@@ -109,8 +109,14 @@ export const Button = styled.button`
   border-radius: 5px;
   background: var(--color-first);
 
+  transition: 0.3s;
+
   &.reset-button {
     width: 328px;
     margin-bottom: 25px;
+  }
+
+  :hover {
+    filter: brightness(0.9);
   }
 `;

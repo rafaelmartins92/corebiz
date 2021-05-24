@@ -56,6 +56,12 @@ export const CustomSwiper = styled(Swiper)`
       background: var(--color-first);
 
       margin: 8px 0px 14px;
+
+      transition: 0.3s;
+
+      :hover {
+        filter: brightness(0.9);
+      }
     }
   }
 

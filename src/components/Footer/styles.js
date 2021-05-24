@@ -58,8 +58,14 @@ export const Button = styled.button`
   justify-content: space-evenly;
   align-items: center;
 
+  transition: 0.3s;
+
   :first-child {
     margin-bottom: 25px;
+  }
+
+  :hover {
+    filter: brightness(0.9);
   }
 `;
 
