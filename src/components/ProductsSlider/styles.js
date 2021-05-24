@@ -71,7 +71,7 @@ export const CustomSwiper = styled(Swiper)`
     background-size: 100% auto;
     background-position: center;
     left: -6px;
-    top: 40%;
+    top: 30%;
   }
 
   .swiper-button-prev::after {
@@ -84,7 +84,7 @@ export const CustomSwiper = styled(Swiper)`
     background-size: 100% auto;
     background-position: center;
     right: -4px;
-    top: 40%;
+    top: 30%;
   }
 
   .swiper-button-next::after {
