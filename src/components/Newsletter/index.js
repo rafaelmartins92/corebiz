@@ -26,7 +26,7 @@ function Newsletter() {
   async function onSubmit(data) {
     try {
       setLoading(true);
-      const response = await PostNewsletter({
+      await PostNewsletter({
         email: data.email,
         name: data.name,
       });
