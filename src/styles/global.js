@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    background: #808080;
   }
 
   *, button, input {

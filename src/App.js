@@ -10,7 +10,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Home />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

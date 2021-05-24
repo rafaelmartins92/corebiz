@@ -13,7 +13,7 @@ import {
 } from "./styles";
 
 import logo from "../../assets/logo-corebiz-preto-cinza.svg";
-import iconSearch from "../../assets/magnifying-glass.svg";
+import iconSearch from "../../assets/Magnifying-glass.svg";
 import iconUser from "../../assets/user.svg";
 import iconCart from "../../assets/Minicart.svg";
 import hamburguer from "../../assets/Icon.svg";
