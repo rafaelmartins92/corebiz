@@ -1,15 +1,12 @@
-// import Swiper core and required modules
 import SwiperCore, { Navigation, A11y } from "swiper";
 import NumberFormat from "react-number-format";
 
 import { SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
 import { Container, CustomSwiper, Title, Divider } from "./styles";
 
-// install Swiper modules
 SwiperCore.use([Navigation, A11y]);
 
 function ProductsSlider({ productList }) {
@@ -17,7 +14,7 @@ function ProductsSlider({ productList }) {
     <Container>
       <Title>Mais Vendidos</Title>
       <Divider />
-      <CustomSwiper navigation slidesPerView={4} spaceBetween={99} width={216}>
+      <CustomSwiper navigation spaceBetween={99} width={216} loop={true}>
         {productList &&
           productList.map((product) => (
             <SwiperSlide key={product.productId}>
@@ -50,7 +47,7 @@ function ProductsSlider({ productList }) {
                 <div className="product-installments">
                   {product.installments.length !== 0 ? (
                     <>
-                      ou em {product.installments[0].quantity} x
+                      ou em {product.installments[0].quantity}x
                       <NumberFormat
                         displayType="text"
                         value={product.installments[0].value}
