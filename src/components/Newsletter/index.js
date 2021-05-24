@@ -17,6 +17,7 @@ function Newsletter() {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -35,6 +36,8 @@ function Newsletter() {
       setLoading(false);
       setCreatedSuccessfully(true);
       setEnableNewRegister(true);
+      setValue("name", "");
+      setValue("email", "");
     }
   }
 
