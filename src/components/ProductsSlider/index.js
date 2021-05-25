@@ -1,11 +1,11 @@
 import SwiperCore, { Navigation, A11y } from "swiper";
-import NumberFormat from "react-number-format";
 import ReactStars from "react-rating-stars-component";
 
 import { SwiperSlide } from "swiper/react";
-
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
+
+import { numberFormat } from "../../utils/numberFormat";
 import { Container, CustomSwiper, Title, Divider } from "./styles";
 
 SwiperCore.use([Navigation, A11y]);
@@ -38,30 +38,22 @@ function ProductsSlider({ productList }) {
                   />
                 </div>
                 {product.listPrice ? (
-                  <NumberFormat
-                    className="product-listProduct"
-                    displayType="text"
-                    value={product.listPrice}
-                    format="de R$ ###,##"
-                  />
+                  <div className="product-listProduct">
+                    de R$ {numberFormat(product.listPrice.toString())}
+                  </div>
                 ) : (
                   <div style={{ color: "transparent" }}>.</div>
                 )}
-                <NumberFormat
-                  className="product-price"
-                  displayType="text"
-                  value={product.price}
-                  format="por R$ ###,##"
-                />
+                {product.price && (
+                  <div className="product-price">
+                    por R$ {numberFormat(product.price.toString())}
+                  </div>
+                )}
                 <div className="product-installments">
                   {product.installments.length !== 0 ? (
                     <>
-                      ou em {product.installments[0].quantity}x
-                      <NumberFormat
-                        displayType="text"
-                        value={product.installments[0].value}
-                        format=" de R$ ##,##"
-                      />
+                      ou em {product.installments[0].quantity}x de R${" "}
+                      {numberFormat(product.installments[0].value.toString())}
                     </>
                   ) : (
                     <div style={{ color: "transparent" }}>.</div>
