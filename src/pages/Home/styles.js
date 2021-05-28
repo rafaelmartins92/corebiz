@@ -2,18 +2,8 @@ import styled from "styled-components";
 import banner from "../../assets/banner.png";
 import bannerMobile from "../../assets/bannerMobile.png";
 
-export const Container = styled.div`
-  background-image: url(${banner});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 430px;
+export const Container = styled.div``;
 
-  @media screen and (max-width: 960px) {
-    background-image: url(${bannerMobile});
-    height: 300px;
-  }
-`;
 export const Banner = styled.div`
   max-width: 1240px;
   height: 100%;
@@ -24,6 +14,19 @@ export const Banner = styled.div`
 
   @media screen and (max-width: 960px) {
     align-items: center;
+  }
+`;
+
+export const HeroBackground = styled.div`
+  background-image: url(${banner});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 430px;
+
+  @media screen and (max-width: 960px) {
+    background-image: url(${bannerMobile});
+    height: 330px;
   }
 `;
 

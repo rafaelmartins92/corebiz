@@ -8,6 +8,7 @@ import { GetProducts } from "../../services/products";
 import {
   Container,
   Banner,
+  HeroBackground,
   HeroP,
   HeroH1,
   HeroSlider,
@@ -29,21 +30,23 @@ function Home() {
   return (
     <>
       <Container>
-        <Banner>
-          <HeroP>Olá, o que você está buscando?</HeroP>
-          <HeroH1>Criar ou migrar seu e-commerce?</HeroH1>
-          <HeroSlider>
-            <SliderButton className="selected" />
-            <SliderButton />
-            <SliderButton />
-            <SliderButton />
-          </HeroSlider>
-        </Banner>
+        <HeroBackground>
+          <Banner>
+            <HeroP>Olá, o que você está buscando?</HeroP>
+            <HeroH1>Criar ou migrar seu e-commerce?</HeroH1>
+            <HeroSlider>
+              <SliderButton className="selected" />
+              <SliderButton />
+              <SliderButton />
+              <SliderButton />
+            </HeroSlider>
+          </Banner>
+        </HeroBackground>
+        <Products>
+          <ProductsSlider productList={productList} />
+          <Newsletter />
+        </Products>
       </Container>
-      <Products>
-        <ProductsSlider productList={productList} />
-        <Newsletter />
-      </Products>
     </>
   );
 }
