@@ -48,6 +48,7 @@ This project was developed with the following technologies:
 -  [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 -  [React JS](https://reactjs.org/docs/getting-started.html)
 -  [Styled Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
 -  [Material UI](https://material-ui.com/)
 -  [React Hook Form](https://react-hook-form.com/)
 -  [Yup](https://github.com/jquense/yup)
